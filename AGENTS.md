@@ -58,9 +58,23 @@ lower than at 6S; neither figure is published without a measurement.
 | Fab config | `hardware/fabrication-toolkit-options.json` |
 | Board setup | 8 copper layers, 1.6 mm, 0.09 mm clearance and track, 0.075 mm annular ring, microvia 0.25 on 0.10 drill, buried and default through via 0.40 on 0.20 drill. Pre-defined sizes and net classes in `hardware/OpenAIO.kicad_pro` |
 | Layer plan | L1 `F.Cu` parts, L2 `In1.Cu` GND plane (type power, no tracks), L3 `In2.Cu` signal, L4 `In3.Cu` power and signal, L5 `In4.Cu` power and signal, L6 `In5.Cu` signal, L7 `In6.Cu` GND plane (type power, no tracks), L8 `B.Cu` parts |
-| Vias | Laser microvia `F.Cu`-`In1.Cu` and `In6.Cu`-`B.Cu` 0.25/0.10; buried `In1.Cu`-`In6.Cu` 0.40/0.20 (Power class 0.45/0.25); through `F.Cu`-`B.Cu`. Mechanical blind vias, other microvia spans and other buried spans are errors in the `.kicad_dru`. Layer pair presets `Buried L2-L7` and `Outer F-B` are in `hardware/OpenAIO.kicad_pro`. Routing how-to text is on `Cmts.User` right of the outline |
-| Stackup | 1 oz (0.035 mm) copper, mask 0.015 mm, target: 1080 0.077 / 2116 0.125 / core 0.330 / 2116+2313 0.228 / core 0.330 / 2116 0.125 / 1080 0.077 mm. The stackup stored in `hardware/OpenAIO.kicad_pcb` (alternating 0.1 and 0.3 mm, Dk 4.5) is not yet this target: set it in Board Setup > Physical Stackup |
+| Vias | Laser microvia `F.Cu`-`In1.Cu` and `In6.Cu`-`B.Cu` 0.25/0.10; buried `In1.Cu`-`In6.Cu` 0.40/0.20 (Power class 0.45/0.25); through `F.Cu`-`B.Cu` 0.40/0.20 (ring 0.09 min). Mechanical blind vias, other microvia spans and other buried spans are errors in the `.kicad_dru`. Layer pair presets `Buried L2-L7` and `Outer F-B` are in `hardware/OpenAIO.kicad_pro`. Routing how-to text is on `Cmts.User` right of the outline |
+| Stackup | 1.602 mm in `hardware/OpenAIO.kicad_pcb`: mask 0.015, 1 oz (0.035 mm) copper on all eight layers, dielectrics L1-L8 1080 0.077 (Dk 4.0) / 2116 0.125 (4.2) / core 0.330 (4.3) / 2116+2313 0.228 (4.15) / core 0.330 / 2116 0.125 / 1080 0.077. ENIG. Vias filled and capped (IPC-4761 VII) |
 | License | CERN-OHL-S-2.0 |
+
+## Decisions
+
+- 2026-10-13: 8 layer HDI 1+6+1 at NextPCB, layer plan B: L1 parts, L2 GND,
+  L3 signal, L4 power, L5 power, L6 signal, L7 GND, L8 parts. GND on L2/L7
+  gives every GND pin one microvia, puts 50 ohm on L1/L8 at about 0.105-0.115
+  mm over 0.077 mm 1080, and shields inner layers from the phase nodes. 1 oz on
+  all layers: 2 oz forces 5/5 mil at NextPCB. Vias: laser 0.25/0.10
+  `F.Cu`-`In1.Cu` and `In6.Cu`-`B.Cu`, buried `In1.Cu`-`In6.Cu` 0.40/0.20
+  (power 0.45/0.25), through 0.40/0.20; no mechanical blind vias, microvias
+  staggered 0.25 mm from buried vias, never stacked. All tracks and vias were
+  removed for a full re-route; footprints, zones and nets kept. Sources:
+  NextPCB HDI capabilities and stackup case study, EPC and TI power-loop
+  layout notes, IPC-WP-023 on stacked microvias.
 
 ## Environment
 

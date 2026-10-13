@@ -27,7 +27,7 @@
 # person can tell a real constraint from a copied one.
 #
 # NextPCB 8L HDI 1+6+1 (L1 parts / L2 GND / L3-L6 signal+power / L7 GND / L8 parts).
-# Laser L1-L2 and L8-L7, buried L2-L7, through F-B kept for the legacy vias.
+# Laser L1-L2 and L8-L7, buried L2-L7, through F-B allowed. Board cleared for a full re-route (2026-10-13).
 # All copper is 1 oz. The stackup lives in the board file, not here.
 
 (rule "HDI 1+6+1: no mechanical blind vias"
@@ -57,10 +57,8 @@
   (constraint annular_width (min 0.09mm))
   (condition "A.Via_Type == 'Buried'"))
 
-# NextPCB 12 mil hole to hole between different nets. Warning only: the legacy
-# layout was routed at 0.20 and stays reviewable until NextPCB confirms (EQ R7).
+# NextPCB 12 mil hole to hole between different nets; same-net via arrays stay at 0.20.
 (rule "hole to hole, different nets 0.30"
-  (severity warning)
   (constraint hole_to_hole (min 0.30mm))
   (condition "A.Net != B.Net"))
 
@@ -78,20 +76,18 @@
   (constraint disallow track)
   (condition "A.Layer == 'In1.Cu' || A.Layer == 'In6.Cu'"))
 
-# 50 ohm CPWG (gap 0.15) on the outer layers over 0.077 mm 1080. Warning only:
-# the legacy RF track on B.Cu is 0.20 wide and is retuned by the layout holder.
+# 50 ohm CPWG (gap 0.15) on the outer layers over 0.077 mm 1080.
 (rule "RF: 50 ohm width on the outer layers"
-  (severity warning)
   (layer outer)
   (constraint track_width (min 0.100mm) (opt 0.105mm) (max 0.110mm))
   (condition "A.NetClass == 'RF'"))
 
-# Through vias stay (1091 legacy vias, AR 8:1 at 0.20 in 1.6 mm). NextPCB mechanical minimum 0.20 above 1.2 mm.
+# Through vias allowed (AR 8:1 at 0.20 in 1.6 mm). NextPCB mechanical minimum 0.20 above 1.2 mm.
 (rule "Through and buried vias: mechanical hole 0.20 min"
   (constraint hole_size (min 0.20mm))
   (condition "A.Via_Type == 'Through' || A.Via_Type == 'Buried'"))
 
-# Legacy 0.35/0.20 through vias have a 0.075 ring, below NextPCB 3.5 mil: EQ item R2.
-(rule "Through via ring 0.075 (NextPCB EQ)"
-  (constraint annular_width (min 0.075mm))
+# NextPCB annular ring 3.5 mil at 1 oz for mechanical holes: 0.40/0.20 and larger.
+(rule "Through via ring 0.09"
+  (constraint annular_width (min 0.09mm))
   (condition "A.Via_Type == 'Through'"))
