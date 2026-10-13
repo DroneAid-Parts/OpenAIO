@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(general
-		(thickness 1.6)
+		(thickness 1.602)
 		(legacy_teardrops no)
 	)
 	(paper "A4")
@@ -49,7 +49,7 @@
 			)
 			(layer "F.Mask"
 				(type "Top Solder Mask")
-				(thickness 0.01)
+				(thickness 0.015)
 			)
 			(layer "F.Cu"
 				(type "copper")
@@ -57,9 +57,9 @@
 			)
 			(layer "dielectric 1"
 				(type "prepreg")
-				(thickness 0.1)
-				(material "FR4")
-				(epsilon_r 4.5)
+				(thickness 0.077)
+				(material "1080")
+				(epsilon_r 4)
 				(loss_tangent 0.02)
 			)
 			(layer "In1.Cu"
@@ -67,10 +67,10 @@
 				(thickness 0.035)
 			)
 			(layer "dielectric 2"
-				(type "core")
-				(thickness 0.3)
-				(material "FR4")
-				(epsilon_r 4.5)
+				(type "prepreg")
+				(thickness 0.125)
+				(material "2116")
+				(epsilon_r 4.2)
 				(loss_tangent 0.02)
 			)
 			(layer "In2.Cu"
@@ -78,10 +78,10 @@
 				(thickness 0.035)
 			)
 			(layer "dielectric 3"
-				(type "prepreg")
-				(thickness 0.1)
-				(material "FR4")
-				(epsilon_r 4.5)
+				(type "core")
+				(thickness 0.33)
+				(material "FR4 core 0.40")
+				(epsilon_r 4.3)
 				(loss_tangent 0.02)
 			)
 			(layer "In3.Cu"
@@ -89,10 +89,10 @@
 				(thickness 0.035)
 			)
 			(layer "dielectric 4"
-				(type "core")
-				(thickness 0.3)
-				(material "FR4")
-				(epsilon_r 4.5)
+				(type "prepreg")
+				(thickness 0.228)
+				(material "2116+2313")
+				(epsilon_r 4.15)
 				(loss_tangent 0.02)
 			)
 			(layer "In4.Cu"
@@ -100,10 +100,10 @@
 				(thickness 0.035)
 			)
 			(layer "dielectric 5"
-				(type "prepreg")
-				(thickness 0.1)
-				(material "FR4")
-				(epsilon_r 4.5)
+				(type "core")
+				(thickness 0.33)
+				(material "FR4 core 0.40")
+				(epsilon_r 4.3)
 				(loss_tangent 0.02)
 			)
 			(layer "In5.Cu"
@@ -111,10 +111,10 @@
 				(thickness 0.035)
 			)
 			(layer "dielectric 6"
-				(type "core")
-				(thickness 0.3)
-				(material "FR4")
-				(epsilon_r 4.5)
+				(type "prepreg")
+				(thickness 0.125)
+				(material "2116")
+				(epsilon_r 4.2)
 				(loss_tangent 0.02)
 			)
 			(layer "In6.Cu"
@@ -123,9 +123,9 @@
 			)
 			(layer "dielectric 7"
 				(type "prepreg")
-				(thickness 0.1)
-				(material "FR4")
-				(epsilon_r 4.5)
+				(thickness 0.077)
+				(material "1080")
+				(epsilon_r 4)
 				(loss_tangent 0.02)
 			)
 			(layer "B.Cu"
@@ -134,7 +134,7 @@
 			)
 			(layer "B.Mask"
 				(type "Bottom Solder Mask")
-				(thickness 0.01)
+				(thickness 0.015)
 			)
 			(layer "B.Paste"
 				(type "Bottom Solder Paste")
@@ -142,8 +142,8 @@
 			(layer "B.SilkS"
 				(type "Bottom Silk Screen")
 			)
-			(copper_finish "None")
-			(dielectric_constraints no)
+			(copper_finish "ENIG")
+			(dielectric_constraints yes)
 		)
 		(pad_to_mask_clearance 0)
 		(pad_to_paste_clearance -0.02)
