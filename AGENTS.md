@@ -50,13 +50,16 @@ lower than at 6S; neither figure is published without a measurement.
 | Designed in | KiCad 10 |
 | KiCad project | `hardware/OpenAIO.kicad_pro` |
 | Root schematic | `hardware/OpenAIO.kicad_sch`. Sub-sheets: `fc_power`, `fc_pads` (OpenFC-Lite-Mini), `esc_channel` x4 (OpenESC-20x20), `rx_esp32c3_sx1281` (OpenRX-Lite). The core is the symbol `lib:OpenDrone-Core`, J1, on the root |
-| Board | `hardware/OpenAIO.kicad_pcb`, 6 layers, 1.6 mm, 2 oz outer |
+| Board | `hardware/OpenAIO.kicad_pcb`, 8 layer HDI 1+6+1, 1.6 mm, 1 oz copper on all layers |
 | Core module | OpenFC-Core, one symbol and one footprint (`OpenDrone-Core_LGA_land`) vendored into `lib`; never edit them here |
 | Local library | `hardware/lib.kicad_sym`, `hardware/lib.pretty/`, `hardware/lib.3dshapes/`, nickname `lib`. Seeded with the OpenFC-Lite-Mini local library so the copied sheets resolve; the lib tables also alias `components`, `4in1ESC` and `OpenRX-Shared` onto the catalogue for the same reason |
 | Shared library | `hardware/KiCad-Library/`, pinned submodule of [OpenDrone-hw/KiCad-Library](https://github.com/OpenDrone-hw/KiCad-Library), nickname `OpenDrone`; 3D models and exact component datasheets resolve through `OPENDRONE_LIB` |
-| Design rules | `hardware/OpenAIO.kicad_dru`: canonical block plus 2 oz outer copper (0.16 mm clearance and track) |
+| Design rules | `hardware/OpenAIO.kicad_dru`: canonical block plus the HDI 1+6+1 via, plane and RF rules |
 | Fab config | `hardware/fabrication-toolkit-options.json` |
-| Board setup | 6 layers, 1.6 mm, 2 oz outer, 0.16 mm clearance and track, via 0.35 on 0.20 drill |
+| Board setup | 8 copper layers, 1.6 mm, 0.09 mm clearance and track, 0.075 mm annular ring, microvia 0.25 on 0.10 drill, buried and default through via 0.40 on 0.20 drill. Pre-defined sizes and net classes in `hardware/OpenAIO.kicad_pro` |
+| Layer plan | L1 `F.Cu` parts, L2 `In1.Cu` GND plane (type power, no tracks), L3 `In2.Cu` signal, L4 `In3.Cu` power and signal, L5 `In4.Cu` power and signal, L6 `In5.Cu` signal, L7 `In6.Cu` GND plane (type power, no tracks), L8 `B.Cu` parts |
+| Vias | Laser microvia `F.Cu`-`In1.Cu` and `In6.Cu`-`B.Cu` 0.25/0.10; buried `In1.Cu`-`In6.Cu` 0.40/0.20 (Power class 0.45/0.25); through `F.Cu`-`B.Cu`. Mechanical blind vias, other microvia spans and other buried spans are errors in the `.kicad_dru`. Layer pair presets `Buried L2-L7` and `Outer F-B` are in `hardware/OpenAIO.kicad_pro`. Routing how-to text is on `Cmts.User` right of the outline |
+| Stackup | 1 oz (0.035 mm) copper, mask 0.015 mm, target: 1080 0.077 / 2116 0.125 / core 0.330 / 2116+2313 0.228 / core 0.330 / 2116 0.125 / 1080 0.077 mm. The stackup stored in `hardware/OpenAIO.kicad_pcb` (alternating 0.1 and 0.3 mm, Dk 4.5) is not yet this target: set it in Board Setup > Physical Stackup |
 | License | CERN-OHL-S-2.0 |
 
 ## Environment

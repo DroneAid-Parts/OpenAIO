@@ -9,12 +9,12 @@
 	(paper "A4")
 	(layers
 		(0 "F.Cu" signal)
-		(4 "In1.Cu" signal)
-		(6 "In2.Cu" signal)
-		(8 "In3.Cu" signal)
-		(10 "In4.Cu" signal)
-		(12 "In5.Cu" signal)
-		(14 "In6.Cu" signal)
+		(4 "In1.Cu" power)
+		(6 "In2.Cu" mixed)
+		(8 "In3.Cu" mixed)
+		(10 "In4.Cu" mixed)
+		(12 "In5.Cu" mixed)
+		(14 "In6.Cu" power)
 		(2 "B.Cu" signal)
 		(9 "F.Adhes" user "F.Adhesive")
 		(11 "B.Adhes" user "B.Adhesive")
@@ -72103,6 +72103,32 @@
 					(xy 74.517096 50.67882) (xy 71.31263 50.67882) (xy 71.31263 49.897243) (xy 74.517096 49.897243)
 				)
 			)
+		)
+	)
+	(gr_text "HDI 1+6+1 NextPCB. L1 parts | L2 GND | L3 sig | L4 PWR | L5 PWR | L6 sig | L7 GND | L8 parts\nVias: laser 0.25/0.10 L1-L2, L8-L7 | buried L2-L7 and through 0.40/0.20 default (power 0.45/0.25) | legacy through 0.35/0.20\nRoute (X). V = through via. Ctrl+V = microvia. Alt+Shift+V = blind/buried via (uses active layer pair).\nLayer pair presets are preloaded (Route > Set Layer Pair): \"Buried L2-L7\" In1.Cu/In6.Cu, \"Outer F-B\"; Shift+V cycles.\nAlt+< = select layer then place blind/buried via. After placing, E on the via: check type and layers.\nSizes: Board Setup > Design Rules > Pre-defined Sizes; pick via size in the toolbar before placing.\nGND pin: pad > Ctrl+V microvia into the pad > done (L2 is GND). Bottom: pad > Ctrl+V to In6.\nSignal: pad > Ctrl+V to In1 > Alt+Shift+V buried 0.25 mm beside it (lands overlap, no L2 track) > route on In2/In5.\nPower: pad > microvias > buried vias staggered > In3/In4 plane connects through the buried via.\nNever stack a microvia on a buried via; stagger 0.25 mm c-c. Never microvia L1-L3 (skip via).\nFine pitch (<= 0.5 mm): microvia in pad, filled and capped (IPC-4761 VII). Buried vias are resin filled.\nPower and phase: arrays of microvias and buried vias, 0.20 mm same-net hole spacing.\nRF: no vias on RF nets, 0.105 mm CPWG gap 0.15 on L1/L8, L2/L7 solid below.\nRun DRC after each block; \"blind via\" errors mean Alt+Shift+V picked the wrong type."
+		(at 96 43.5 0)
+		(layer "Cmts.User")
+		(uuid "256a5f2d-bea0-44bf-8534-8e403b8f4799")
+		(effects
+			(font
+				(size 1 1)
+				(line_spacing 1.4)
+				(thickness 0.15)
+			)
+			(justify left top)
+		)
+	)
+	(gr_text "OpenAIO STACKUP 1.6 mm, 8 layer HDI 1+6+1, all copper 1 oz (0.035), mask 0.015\nLayer | KiCad | Use                                   | Dielectric below (mm)\nL1 | F.Cu   | parts, RF, USB, power loops             | 1080 0.077\nL2 | In1.Cu | GND plane, no tracks (type power)       | 2116 0.125\nL3 | In2.Cu | signals + +BATT zone (mixed)           | core 0.330\nL4 | In3.Cu | +4v5/+3V3/+5V_USB zones + signals       | 2116+2313 0.228\nL5 | In4.Cu | +5V/+3V3 zones + signals                | core 0.330\nL6 | In5.Cu | signals + +10V/+BATT zones              | 2116 0.125\nL7 | In6.Cu | GND plane, no tracks (type power)       | 1080 0.077\nL8 | B.Cu   | parts, RF, power\nVIA | span | drill/pad (mm)\nLaser micro | F.Cu-In1.Cu, In6.Cu-B.Cu | 0.10/0.25\nBuried | In1.Cu-In6.Cu | 0.20/0.40 (power 0.25/0.45)\nThrough | F.Cu-B.Cu | 0.20/0.35 legacy, 0.20/0.40 default, 0.25/0.45, 0.30/0.50\nBlind mechanical: not allowed (DRC rule)"
+		(at 96 73 0)
+		(layer "Cmts.User")
+		(uuid "70c38a14-7874-4ab3-9179-1647cbc81b38")
+		(effects
+			(font
+				(size 1 1)
+				(line_spacing 1.4)
+				(thickness 0.15)
+			)
+			(justify left top)
 		)
 	)
 	(via
