@@ -111,6 +111,12 @@ per cell).
   and through 0.38/0.20 in every net class (0.20 is their smallest mechanical
   drill on a 1.6 mm board; quote engine rejects 0.12 and 0.10).
 
+- After a routing session, with KiCad closed, run `hardware/tools/hdi_via_pass.py` with KiCad's bundled
+  Python: it replaces every unbuildable via (mechanical blind, multi-layer microvia) with the
+  minimum stack at the same spot (microvia, microvia + buried, microvia + buried + microvia), nudges
+  up to 0.05 mm for clearance and lists bigger conflicts. Then run DRC.
+  `--allow-through` keeps through vias.
+
 ## Environment
 
 ```sh
