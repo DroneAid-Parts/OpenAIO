@@ -71,10 +71,15 @@ lower than at 6S; neither figure is published without a measurement.
   all layers: 2 oz forces 5/5 mil at NextPCB. Vias: laser 0.25/0.10
   `F.Cu`-`In1.Cu` and `In6.Cu`-`B.Cu`, buried `In1.Cu`-`In6.Cu` 0.40/0.20
   (power 0.45/0.25), through 0.40/0.20; no mechanical blind vias, microvias
-  staggered 0.25 mm from buried vias, never stacked. All tracks and vias were
+  stacked on a same-net buried via or staggered 0.25 mm (stacking allowed
+  2026-10-13, priced by NextPCB as HDI II / Rank 2). All tracks and vias were
   removed for a full re-route; footprints, zones and nets kept. Sources:
   NextPCB HDI capabilities and stackup case study, EPC and TI power-loop
   layout notes, IPC-WP-023 on stacked microvias.
+
+- 2026-10-13: stacked microvia allowed on a same-net buried via; staggered
+  0.25 mm stays allowed. NextPCB prices the stack as HDI II (Rank 2), about
+  +0.34 USD per board at 1000 pcs and +4 days.
 
 ## Environment
 
