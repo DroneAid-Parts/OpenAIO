@@ -84,7 +84,7 @@ per cell).
 | Fab config | `hardware/fabrication-toolkit-options.json` |
 | Board setup | 8 copper layers, 1.6 mm, 0.09 mm clearance and track, 0.075 mm annular ring, microvia 0.25 on 0.10 drill, buried and default through via 0.40 on 0.20 drill. Pre-defined sizes and net classes in `hardware/OpenAIO.kicad_pro` |
 | Layer plan | L1 `F.Cu` parts, L2 `In1.Cu` GND plane (type power, no tracks), L3 `In2.Cu` signal, L4 `In3.Cu` power and signal, L5 `In4.Cu` power and signal, L6 `In5.Cu` signal, L7 `In6.Cu` GND plane (type power, no tracks), L8 `B.Cu` parts |
-| Vias | Laser microvia `F.Cu`-`In1.Cu` and `In6.Cu`-`B.Cu` 0.25/0.10; buried `In1.Cu`-`In6.Cu` 0.40/0.20 (Power class 0.45/0.25); through `F.Cu`-`B.Cu` 0.40/0.20 (ring 0.09 min). Mechanical blind vias, other microvia spans and other buried spans are errors in the `.kicad_dru`. Layer pair presets `Buried L2-L7` and `Outer F-B` are in `hardware/OpenAIO.kicad_pro`. Routing how-to text is on `Cmts.User` right of the outline |
+| Vias | Laser microvia `F.Cu`-`In1.Cu` and `In6.Cu`-`B.Cu` 0.25/0.10; buried `In1.Cu`-`In6.Cu` and through `F.Cu`-`B.Cu` 0.38/0.20 in every net class and the only pre-defined size (NextPCB minimum: 0.20 mechanical drill above 1.2 mm thickness, 0.09 ring). Mechanical blind vias, other microvia spans and other buried spans are errors in the `.kicad_dru`. Layer pair presets `Buried L2-L7` and `Outer F-B` are in `hardware/OpenAIO.kicad_pro`. Routing how-to text is on `Cmts.User` right of the outline |
 | Stackup | 1.602 mm in `hardware/OpenAIO.kicad_pcb`: mask 0.015, 1 oz (0.035 mm) copper on all eight layers, dielectrics L1-L8 1080 0.077 (Dk 4.0) / 2116 0.125 (4.2) / core 0.330 (4.3) / 2116+2313 0.228 (4.15) / core 0.330 / 2116 0.125 / 1080 0.077. ENIG. Vias filled and capped (IPC-4761 VII) |
 | License | CERN-OHL-S-2.0 |
 
@@ -106,6 +106,10 @@ per cell).
 - 2026-10-13: stacked microvia allowed on a same-net buried via; staggered
   0.25 mm stays allowed. NextPCB prices the stack as HDI II (Rank 2), about
   +0.34 USD per board at 1000 pcs and +4 days.
+
+- 2026-10-13: via sizes set to the NextPCB minimum: microvia 0.25/0.10, buried
+  and through 0.38/0.20 in every net class (0.20 is their smallest mechanical
+  drill on a 1.6 mm board; quote engine rejects 0.12 and 0.10).
 
 ## Environment
 
