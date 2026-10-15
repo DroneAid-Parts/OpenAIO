@@ -4,6 +4,11 @@
 	(generator_version "10.0")
 	(uuid "9e014c51-20c0-47ba-9266-885dc9800335")
 	(paper "A4")
+	(title_block
+		(title "ESC channel")
+		(date "2026-10")
+		(rev "r2")
+	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
 			(pin_numbers
@@ -423,7 +428,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "ESCLibrary:0201_10kR"
+		(symbol "lib:0201_10kR"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -568,7 +573,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "ESCLibrary:0201_1kR"
+		(symbol "lib:0201_1kR"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -713,7 +718,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "ESCLibrary:0201_220R"
+		(symbol "lib:0201_220R"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -858,7 +863,284 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "ESCLibrary:AT32F421G8U7"
+		(symbol "lib:2N6660"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Q"
+				(at 5.08 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "2N6660"
+				(at 5.08 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "PCM_Package_TO_SOT_THT_AKL:TO-39-3_SGD"
+				(at 5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.tme.eu/Document/5ed933c46c767af29b5a52c786b35e4a/2N6660.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "TO-39 N-MOSFET enchancement mode transistor, 60V, 410mA, 6.25W, Alternate KiCAD Library"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "enchancement mosfet nmosfet n-mosfet nmos n-mos emos emosfet 2N6660"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "2N6660_0_1"
+				(polyline
+					(pts
+						(xy 0.254 1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 -1.27) (xy -2.54 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.778) (xy 2.54 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.778) (xy 0.762 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.1778)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "2N6660_1_1"
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -3.81 -1.27 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "lib:AT32F421G8U7"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1491,7 +1773,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "ESCLibrary:GRM033R61C104KE84D"
+		(symbol "lib:GRM033R61C104KE84D"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1623,7 +1905,7 @@
 						(type none)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
 					(name "1"
@@ -1641,7 +1923,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 3.81 0 180)
 					(length 2.54)
 					(name "2"
@@ -1662,503 +1944,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "PCM_Resistor_AKL:R_0402"
-			(body_styles demorgan)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 2.54 1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "R_0402"
-				(at 2.54 -1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "PCM_Resistor_SMD_AKL:R_0402_1005Metric"
-				(at 0 -11.43 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "SMD 0402 Chip Resistor, European Symbol, Alternate KiCad Library"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "R res resistor eu smd 0402"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "R_0402_0_1"
-				(rectangle
-					(start -1.016 2.54)
-					(end 1.016 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_0402_0_2"
-				(polyline
-					(pts
-						(xy -2.54 -2.54) (xy -1.524 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.524 1.524) (xy 2.54 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.524 1.524) (xy 0.889 2.159) (xy -2.159 -0.889) (xy -0.889 -2.159) (xy 2.159 0.889) (xy 1.524 1.524)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_0402_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "R_0402_1_2"
-				(pin passive line
-					(at 2.54 2.54 180)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 -2.54 0)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "PCM_Transistor_MOSFET_AKL:2N6660"
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Q"
-				(at 5.08 1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "2N6660"
-				(at 5.08 -1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "PCM_Package_TO_SOT_THT_AKL:TO-39-3_SGD"
-				(at 5.08 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.tme.eu/Document/5ed933c46c767af29b5a52c786b35e4a/2N6660.pdf"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "TO-39 N-MOSFET enchancement mode transistor, 60V, 410mA, 6.25W, Alternate KiCAD Library"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "enchancement mosfet nmosfet n-mosfet nmos n-mos emos emosfet 2N6660"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "2N6660_0_1"
-				(polyline
-					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 -1.27) (xy -2.54 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.778) (xy 2.54 -1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 1.651 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 1.778) (xy 0.762 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 -1.778)
-					(radius 0.1778)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "2N6660_1_1"
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -3.81 -1.27 0)
-					(length 2.54)
-					(name "G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "components:NSG2065Q"
+		(symbol "lib:NSG2065Q"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2710,6 +2496,225 @@
 						(effects
 							(font
 								(size 1 1)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "lib:R_0402"
+			(body_styles demorgan)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.54 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_0402"
+				(at 2.54 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "PCM_Resistor_SMD_AKL:R_0402_1005Metric"
+				(at 0 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "SMD 0402 Chip Resistor, European Symbol, Alternate KiCad Library"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor eu smd 0402"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0402_0_1"
+				(rectangle
+					(start -1.016 2.54)
+					(end 1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_0402_0_2"
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy -1.524 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 1.524) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 1.524) (xy 0.889 2.159) (xy -2.159 -0.889) (xy -0.889 -2.159) (xy 2.159 0.889) (xy 1.524 1.524)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_0402_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "R_0402_1_2"
+				(pin passive line
+					(at 2.54 2.54 180)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -2.54 0)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -5277,7 +5282,7 @@
 		(uuid "90f81e18-6b58-4d95-b0e1-9ad7f189a681")
 	)
 	(symbol
-		(lib_id "ESCLibrary:0201_10kR")
+		(lib_id "lib:0201_10kR")
 		(at 234.95 99.06 180)
 		(unit 1)
 		(body_style 1)
@@ -5288,7 +5293,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0207287f-a170-402e-9442-21b3044af211")
-		(property "Reference" "R32"
+		(property "Reference" "R69"
 			(at 234.95 93.1978 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5309,7 +5314,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "lib:R_0201_0603Metric"
 			(at 234.95 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -5399,7 +5404,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "YAGEO"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -5457,21 +5462,21 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "R70")
+					(reference "R88")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "R51")
+					(reference "R69")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "R89")
+					(reference "R107")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "R32")
+					(reference "R50")
 					(unit 1)
 				)
 			)
@@ -5489,7 +5494,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "023ab7c7-1ae1-49e1-823a-da723031d52d")
-		(property "Reference" "#PWR0130"
+		(property "Reference" "#PWR0260"
 			(at 234.95 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -5547,21 +5552,21 @@
 			(uuid "ea8d1679-75d8-426d-b052-ab293de504c5")
 		)
 		(instances
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "#PWR0180")
+					(reference "#PWR0260")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "#PWR0155")
+					(reference "#PWR0254")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "#PWR0205")
+					(reference "#PWR0266")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "#PWR0130")
+					(reference "#PWR0248")
 					(unit 1)
 				)
 			)
@@ -5579,7 +5584,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "03a9c797-51ec-4a52-a32e-84c5fc227279")
-		(property "Reference" "#PWR0115"
+		(property "Reference" "#PWR093"
 			(at 72.39 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -5655,21 +5660,21 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "#PWR0165")
+					(reference "#PWR0176")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "#PWR0140")
+					(reference "#PWR0157")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "#PWR0190")
+					(reference "#PWR0195")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "#PWR0115")
+					(reference "#PWR0138")
 					(unit 1)
 				)
 			)
@@ -5686,7 +5691,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "16ecf559-69f0-4983-8452-63808a379217")
-		(property "Reference" "TP3"
+		(property "Reference" "TP7"
 			(at 25.146 74.422 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5698,6 +5703,7 @@
 		)
 		(property "Value" "TestPoint"
 			(at 30.988 70.612 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5706,7 +5712,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+		(property "Footprint" "lib:TestPoint_Pad_D1.0mm"
 			(at 34.29 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -5761,21 +5767,21 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "TP7")
-					(unit 1)
-				)
-				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
 					(reference "TP5")
 					(unit 1)
 				)
+				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
+					(reference "TP3")
+					(unit 1)
+				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "TP9")
+					(reference "TP7")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "TP3")
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -5793,7 +5799,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1b088461-2863-4244-b0f0-8cd81dc2f3c1")
-		(property "Reference" "#PWR0134"
+		(property "Reference" "#PWR0105"
 			(at 254 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -5869,28 +5875,28 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "#PWR0184")
+					(reference "#PWR0189")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "#PWR0159")
+					(reference "#PWR0170")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "#PWR0209")
+					(reference "#PWR0208")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "#PWR0134")
+					(reference "#PWR0151")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "ESCLibrary:0201_1kR")
+		(lib_id "lib:0201_1kR")
 		(at 229.87 111.76 90)
 		(unit 1)
 		(body_style 1)
@@ -5901,7 +5907,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "20ede2b2-d3bc-42b3-baca-562998e89377")
-		(property "Reference" "R31"
+		(property "Reference" "R68"
 			(at 234.95 111.7599 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5923,7 +5929,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "lib:R_0201_0603Metric"
 			(at 240.03 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -6013,7 +6019,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -6071,21 +6077,21 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "R69")
+					(reference "R87")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "R50")
+					(reference "R68")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "R88")
+					(reference "R106")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "R31")
+					(reference "R49")
 					(unit 1)
 				)
 			)
@@ -6103,7 +6109,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "22627c00-04c1-48b9-ab89-c91f960565dc")
-		(property "Reference" "#PWR0133"
+		(property "Reference" "#PWR0263"
 			(at 245.745 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -6161,28 +6167,28 @@
 			(uuid "37c54295-8969-4bf6-b741-0614bf4a90de")
 		)
 		(instances
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "#PWR0183")
+					(reference "#PWR0263")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "#PWR0158")
+					(reference "#PWR0257")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "#PWR0208")
+					(reference "#PWR0269")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "#PWR0133")
+					(reference "#PWR0251")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "ESCLibrary:GRM033R61C104KE84D")
+		(lib_id "lib:GRM033R61C104KE84D")
 		(at 45.72 67.31 270)
 		(unit 1)
 		(body_style 1)
@@ -6192,7 +6198,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "26ebf752-bc8e-4e2a-a796-cb73df12a260")
-		(property "Reference" "C43"
+		(property "Reference" "C80"
 			(at 41.656 69.596 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6214,7 +6220,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "lib:C_0201_0603Metric"
 			(at 35.56 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -6304,7 +6310,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Murata Electronics"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -6362,21 +6368,21 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "C63")
+					(reference "C51")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "C53")
+					(reference "C44")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "C73")
+					(reference "C58")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "C43")
+					(reference "C37")
 					(unit 1)
 				)
 			)
@@ -6394,7 +6400,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "27b20d01-8951-4b8a-9fbb-5f65eb3a72cb")
-		(property "Reference" "#PWR0111"
+		(property "Reference" "#PWR090"
 			(at 39.37 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -6470,21 +6476,21 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "#PWR0161")
+					(reference "#PWR0172")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "#PWR0136")
+					(reference "#PWR0153")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "#PWR0186")
+					(reference "#PWR0191")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "#PWR0111")
+					(reference "#PWR0134")
 					(unit 1)
 				)
 			)
@@ -6502,7 +6508,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2963aff8-312e-4907-9e61-11a3759d1865")
-		(property "Reference" "#PWR0118"
+		(property "Reference" "#PWR095"
 			(at 99.06 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -6578,21 +6584,21 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "#PWR0168")
+					(reference "#PWR0179")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "#PWR0143")
+					(reference "#PWR0160")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "#PWR0193")
+					(reference "#PWR0198")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "#PWR0118")
+					(reference "#PWR0141")
 					(unit 1)
 				)
 			)
@@ -6610,7 +6616,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2a670bc3-ff69-46d7-ba92-24e8f8ff5446")
-		(property "Reference" "#PWR0127"
+		(property "Reference" "#PWR0258"
 			(at 223.52 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -6668,21 +6674,21 @@
 			(uuid "8e7fa190-c776-4996-ba02-e29a394bdabb")
 		)
 		(instances
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "#PWR0177")
+					(reference "#PWR0258")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "#PWR0152")
+					(reference "#PWR0252")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "#PWR0202")
+					(reference "#PWR0264")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "#PWR0127")
+					(reference "#PWR0246")
 					(unit 1)
 				)
 			)
@@ -6700,7 +6706,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2e0a9a19-e5b1-4339-a3be-e844973b7ec0")
-		(property "Reference" "#PWR0131"
+		(property "Reference" "#PWR0261"
 			(at 234.95 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -6758,28 +6764,28 @@
 			(uuid "572c8fe4-8dc3-415f-9610-638809a56962")
 		)
 		(instances
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "#PWR0181")
+					(reference "#PWR0261")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "#PWR0156")
+					(reference "#PWR0255")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "#PWR0206")
+					(reference "#PWR0267")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "#PWR0131")
+					(reference "#PWR0249")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "PCM_Resistor_AKL:R_0402")
+		(lib_id "lib:R_0402")
 		(at 29.21 147.32 90)
 		(unit 1)
 		(body_style 1)
@@ -6789,7 +6795,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "308997bb-528a-4cea-b845-511c6dbad964")
-		(property "Reference" "R17"
+		(property "Reference" "R55"
 			(at 29.21 142.494 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6809,7 +6815,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "lib:R_0201_0603Metric"
 			(at 40.64 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -6897,7 +6903,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -6955,28 +6961,28 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "R55")
+					(reference "R73")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "R36")
+					(reference "R54")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "R74")
+					(reference "R92")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "R17")
+					(reference "R35")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "ESCLibrary:GRM033R61C104KE84D")
+		(lib_id "lib:GRM033R61C104KE84D")
 		(at 161.29 66.04 180)
 		(unit 1)
 		(body_style 1)
@@ -6986,7 +6992,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "30a756ea-91b9-430d-a47d-8b27cd18f4da")
-		(property "Reference" "C47"
+		(property "Reference" "C35"
 			(at 159.004 61.976 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7008,7 +7014,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_WIDE"
+		(property "Footprint" "lib:C_0402_WIDE"
 			(at 161.29 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -7098,7 +7104,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -7156,21 +7162,21 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "C67")
+					(reference "C55")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "C57")
+					(reference "C48")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "C77")
+					(reference "C62")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "C47")
+					(reference "C41")
 					(unit 1)
 				)
 			)
@@ -7188,7 +7194,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "37883ce9-3ba2-4263-a26a-c25b41383d43")
-		(property "Reference" "#PWR0119"
+		(property "Reference" "#PWR096"
 			(at 99.06 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -7264,28 +7270,28 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "#PWR0169")
+					(reference "#PWR0180")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "#PWR0144")
+					(reference "#PWR0161")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "#PWR0194")
+					(reference "#PWR0199")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "#PWR0119")
+					(reference "#PWR0142")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "components:NSG2065Q")
+		(lib_id "lib:NSG2065Q")
 		(at 133.35 74.93 0)
 		(unit 1)
 		(body_style 1)
@@ -7296,7 +7302,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "392d35f8-1fb3-4b69-b279-a01430056712")
-		(property "Reference" "U12"
+		(property "Reference" "U11"
 			(at 133.35 40.64 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7316,7 +7322,7 @@
 				)
 			)
 		)
-		(property "Footprint" "4in1ESC:QFN-24_L4.0-W4.0-P0.50-TL-EP2.8"
+		(property "Footprint" "lib:QFN-24_L4.0-W4.0-P0.50-TL-EP2.8"
 			(at 133.35 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -7406,7 +7412,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "NSIC"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -7522,21 +7528,21 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "U16")
-					(unit 1)
-				)
-				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "U14")
-					(unit 1)
-				)
-				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
 					(reference "U18")
 					(unit 1)
 				)
+				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
+					(reference "U16")
+					(unit 1)
+				)
+				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
+					(reference "U20")
+					(unit 1)
+				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "U12")
+					(reference "U14")
 					(unit 1)
 				)
 			)
@@ -7554,7 +7560,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3cd7b13d-63b0-42f4-baed-fbf4c1e83e30")
-		(property "Reference" "#PWR0126"
+		(property "Reference" "#PWR0103"
 			(at 205.74 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -7630,28 +7636,28 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "#PWR0176")
+					(reference "#PWR0187")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "#PWR0151")
+					(reference "#PWR0168")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "#PWR0201")
+					(reference "#PWR0206")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "#PWR0126")
+					(reference "#PWR0149")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "ESCLibrary:0201_10kR")
+		(lib_id "lib:0201_10kR")
 		(at 205.74 90.17 90)
 		(unit 1)
 		(body_style 1)
@@ -7662,7 +7668,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3d572661-719d-4838-b033-bd66f97a6615")
-		(property "Reference" "R27"
+		(property "Reference" "R64"
 			(at 210.82 90.1699 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7684,7 +7690,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "lib:R_0201_0603Metric"
 			(at 215.9 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -7774,7 +7780,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "YAGEO"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -7832,21 +7838,21 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "R65")
+					(reference "R83")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "R46")
+					(reference "R64")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "R84")
+					(reference "R102")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "R27")
+					(reference "R45")
 					(unit 1)
 				)
 			)
@@ -7864,7 +7870,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "408ed278-6f83-4191-8dfc-88276e654a61")
-		(property "Reference" "C52"
+		(property "Reference" "C98"
 			(at 248.92 38.0999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7875,7 +7881,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "4.7uF 50v"
 			(at 248.92 40.6399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7886,7 +7892,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "lib:C_0805_2012Metric"
 			(at 246.7102 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -7930,6 +7936,42 @@
 				)
 			)
 		)
+		(property "LCSC" "C98192"
+			(at 248.92 40.6399 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "MPN" "CL21A475KBQNNNE"
+			(at 248.92 40.6399 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 248.92 40.6399 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(pin "2"
 			(uuid "c1186e25-e424-4c35-aa44-5dfcbf0cf6ff")
 		)
@@ -7937,21 +7979,21 @@
 			(uuid "b0bdf1c9-a2bb-4e4b-8421-45dcb92f3bfd")
 		)
 		(instances
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "C72")
+					(reference "C98")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "C62")
+					(reference "C95")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "C82")
+					(reference "C101")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "C52")
+					(reference "C92")
 					(unit 1)
 				)
 			)
@@ -7968,7 +8010,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "43ce57ca-c919-43f7-9b19-8f4cd4fa9045")
-		(property "Reference" "#PWR0114"
+		(property "Reference" "#PWR086"
 			(at 62.23 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -8044,28 +8086,28 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "#PWR0164")
+					(reference "#PWR0175")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "#PWR0139")
+					(reference "#PWR0156")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "#PWR0189")
+					(reference "#PWR0194")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "#PWR0114")
+					(reference "#PWR0137")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "ESCLibrary:0201_10kR")
+		(lib_id "lib:0201_10kR")
 		(at 210.82 99.06 180)
 		(unit 1)
 		(body_style 1)
@@ -8076,7 +8118,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "45a65dcf-d4e0-4466-b87e-77261c8d9a31")
-		(property "Reference" "R29"
+		(property "Reference" "R66"
 			(at 210.82 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8097,7 +8139,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "lib:R_0201_0603Metric"
 			(at 210.82 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -8187,7 +8229,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "YAGEO"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -8245,21 +8287,21 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "R67")
+					(reference "R85")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "R48")
+					(reference "R66")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "R86")
+					(reference "R104")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "R29")
+					(reference "R47")
 					(unit 1)
 				)
 			)
@@ -8276,7 +8318,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "48da86fc-a9f7-47d5-94eb-29b25f7b494a")
-		(property "Reference" "#PWR0120"
+		(property "Reference" "#PWR097"
 			(at 116.84 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -8352,28 +8394,28 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "#PWR0170")
+					(reference "#PWR0181")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "#PWR0145")
+					(reference "#PWR0162")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "#PWR0195")
+					(reference "#PWR0200")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "#PWR0120")
+					(reference "#PWR0143")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "ESCLibrary:GRM033R61C104KE84D")
+		(lib_id "lib:GRM033R61C104KE84D")
 		(at 83.82 36.83 270)
 		(unit 1)
 		(body_style 1)
@@ -8383,7 +8425,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "49a04e93-8604-4afb-b9c4-740388e8d1e6")
-		(property "Reference" "C45"
+		(property "Reference" "C79"
 			(at 80.264 35.814 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8405,7 +8447,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "lib:C_0201_0603Metric"
 			(at 73.66 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -8495,7 +8537,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Murata Electronics"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -8553,28 +8595,28 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "C65")
+					(reference "C53")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "C55")
+					(reference "C46")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "C75")
+					(reference "C60")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "C45")
+					(reference "C39")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "ESCLibrary:0201_10kR")
+		(lib_id "lib:0201_10kR")
 		(at 49.53 60.96 180)
 		(unit 1)
 		(body_style 1)
@@ -8585,7 +8627,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4b80351d-58f5-4946-ab60-c5514cb8ebb2")
-		(property "Reference" "R20"
+		(property "Reference" "R58"
 			(at 49.53 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8606,7 +8648,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "lib:R_0201_0603Metric"
 			(at 49.53 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -8696,7 +8738,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "YAGEO"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -8754,28 +8796,28 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "R58")
+					(reference "R76")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "R39")
+					(reference "R57")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "R77")
+					(reference "R95")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "R20")
+					(reference "R38")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "ESCLibrary:0201_10kR")
+		(lib_id "lib:0201_10kR")
 		(at 259.08 99.06 180)
 		(unit 1)
 		(body_style 1)
@@ -8786,7 +8828,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4dcb51a7-8f21-4346-bfe7-f0ca37ca8014")
-		(property "Reference" "R35"
+		(property "Reference" "R72"
 			(at 259.08 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8807,7 +8849,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "lib:R_0201_0603Metric"
 			(at 259.08 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -8897,7 +8939,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "YAGEO"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -8955,28 +8997,28 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "R73")
+					(reference "R91")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "R54")
+					(reference "R72")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "R92")
+					(reference "R110")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "R35")
+					(reference "R53")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "ESCLibrary:GRM033R61C104KE84D")
+		(lib_id "lib:GRM033R61C104KE84D")
 		(at 62.23 36.83 270)
 		(unit 1)
 		(body_style 1)
@@ -8986,7 +9028,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4ffb9b21-0044-4ca9-a90f-69e20c34aff9")
-		(property "Reference" "C44"
+		(property "Reference" "C78"
 			(at 58.166 39.116 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9008,7 +9050,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "lib:C_0201_0603Metric"
 			(at 52.07 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -9098,7 +9140,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Murata Electronics"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -9156,28 +9198,28 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "C64")
+					(reference "C52")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "C54")
+					(reference "C45")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "C74")
+					(reference "C59")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "C44")
+					(reference "C38")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "ESCLibrary:0201_1kR")
+		(lib_id "lib:0201_1kR")
 		(at 205.74 111.76 90)
 		(unit 1)
 		(body_style 1)
@@ -9188,7 +9230,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "50c60d97-4209-47ee-a259-e385d2b100a6")
-		(property "Reference" "R28"
+		(property "Reference" "R65"
 			(at 210.82 111.7599 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9210,7 +9252,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "lib:R_0201_0603Metric"
 			(at 215.9 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -9300,7 +9342,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -9358,28 +9400,28 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "R66")
+					(reference "R84")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "R47")
+					(reference "R65")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "R85")
+					(reference "R103")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "R28")
+					(reference "R46")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "ESCLibrary:0201_10kR")
+		(lib_id "lib:0201_10kR")
 		(at 254 90.17 270)
 		(unit 1)
 		(body_style 1)
@@ -9390,7 +9432,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5d777ac9-ee6a-4111-baf4-d69234a742df")
-		(property "Reference" "R33"
+		(property "Reference" "R70"
 			(at 256.54 90.1699 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9412,7 +9454,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "lib:R_0201_0603Metric"
 			(at 243.84 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -9502,7 +9544,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "YAGEO"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -9560,28 +9602,28 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "R71")
+					(reference "R89")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "R52")
+					(reference "R70")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "R90")
+					(reference "R108")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "R33")
+					(reference "R51")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "ESCLibrary:GRM033R61C104KE84D")
+		(lib_id "lib:GRM033R61C104KE84D")
 		(at 151.13 63.5 180)
 		(unit 1)
 		(body_style 1)
@@ -9591,7 +9633,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5eb14246-b401-47f9-959e-6f096790a60d")
-		(property "Reference" "C46"
+		(property "Reference" "C83"
 			(at 148.844 59.436 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9613,7 +9655,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_WIDE"
+		(property "Footprint" "lib:C_0402_WIDE"
 			(at 151.13 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -9703,7 +9745,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -9761,28 +9803,28 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "C66")
+					(reference "C54")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "C56")
+					(reference "C47")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "C76")
+					(reference "C61")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "C46")
+					(reference "C40")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "ESCLibrary:0201_10kR")
+		(lib_id "lib:0201_10kR")
 		(at 229.87 90.17 270)
 		(unit 1)
 		(body_style 1)
@@ -9793,7 +9835,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "64bce399-bf33-46c3-89eb-ab22631eb2be")
-		(property "Reference" "R30"
+		(property "Reference" "R67"
 			(at 232.41 90.1699 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9815,7 +9857,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "lib:R_0201_0603Metric"
 			(at 219.71 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -9905,7 +9947,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "YAGEO"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -9963,21 +10005,21 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "R68")
+					(reference "R86")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "R49")
+					(reference "R67")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "R87")
+					(reference "R105")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "R30")
+					(reference "R48")
 					(unit 1)
 				)
 			)
@@ -9995,7 +10037,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "679ba691-79a2-40fb-895f-c76dc4fb8f36")
-		(property "Reference" "#PWR0110"
+		(property "Reference" "#PWR087"
 			(at 29.21 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -10006,7 +10048,7 @@
 				)
 			)
 		)
-		(property "Value" "+3V3"
+		(property "Value" "+3V3_ESC"
 			(at 29.21 49.53 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10071,28 +10113,28 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "#PWR0160")
+					(reference "#PWR0171")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "#PWR0135")
+					(reference "#PWR0152")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "#PWR0185")
+					(reference "#PWR0190")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "#PWR0110")
+					(reference "#PWR0133")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "PCM_Resistor_AKL:R_0402")
+		(lib_id "lib:R_0402")
 		(at 88.9 162.56 90)
 		(unit 1)
 		(body_style 1)
@@ -10102,7 +10144,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6db4f592-2c0f-45a7-adb9-5ce48ca48a8d")
-		(property "Reference" "R24"
+		(property "Reference" "R61"
 			(at 88.9 157.734 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10122,7 +10164,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "lib:R_0201_0603Metric"
 			(at 100.33 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -10210,7 +10252,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -10268,28 +10310,28 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "R62")
+					(reference "R80")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "R43")
+					(reference "R61")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "R81")
+					(reference "R99")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "R24")
+					(reference "R42")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "ESCLibrary:GRM033R61C104KE84D")
+		(lib_id "lib:GRM033R61C104KE84D")
 		(at 187.96 26.67 270)
 		(unit 1)
 		(body_style 1)
@@ -10299,7 +10341,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6e92df75-7edf-4574-97f6-e0e9b80bcd18")
-		(property "Reference" "C49"
+		(property "Reference" "C88"
 			(at 183.896 28.956 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10321,7 +10363,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "lib:C_0201_0603Metric"
 			(at 177.8 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -10411,7 +10453,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Murata Electronics"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -10469,28 +10511,28 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "C69")
+					(reference "C57")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "C59")
+					(reference "C50")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "C79")
+					(reference "C64")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "C49")
+					(reference "C43")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "ESCLibrary:AT32F421G8U7")
+		(lib_id "lib:AT32F421G8U7")
 		(at 72.39 69.85 0)
 		(unit 1)
 		(body_style 1)
@@ -10500,7 +10542,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "718f5ec9-d88b-4b82-b61e-f023eec71dc8")
-		(property "Reference" "U11"
+		(property "Reference" "U10"
 			(at 71.882 73.152 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10522,7 +10564,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "4in1ESC:QFN-28_L4.0-W4.0-P0.40-TL-EP2.4"
+		(property "Footprint" "lib:QFN-28_L4.0-W4.0-P0.40-TL-EP2.4"
 			(at 72.39 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -10740,28 +10782,28 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "U15")
-					(unit 1)
-				)
-				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "U13")
-					(unit 1)
-				)
-				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
 					(reference "U17")
 					(unit 1)
 				)
+				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
+					(reference "U15")
+					(unit 1)
+				)
+				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
+					(reference "U19")
+					(unit 1)
+				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "U11")
+					(reference "U13")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "PCM_Resistor_AKL:R_0402")
+		(lib_id "lib:R_0402")
 		(at 149.86 161.29 90)
 		(unit 1)
 		(body_style 1)
@@ -10771,7 +10813,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "76d1d8ca-f263-4744-b56b-6b61bbd29994")
-		(property "Reference" "R26"
+		(property "Reference" "R63"
 			(at 149.86 156.464 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10791,7 +10833,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "lib:R_0201_0603Metric"
 			(at 161.29 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -10879,7 +10921,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -10937,21 +10979,21 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "R64")
+					(reference "R82")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "R45")
+					(reference "R63")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "R83")
+					(reference "R101")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "R26")
+					(reference "R44")
 					(unit 1)
 				)
 			)
@@ -10969,7 +11011,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "788be35c-0cc4-4d35-b5b2-508a5cd99040")
-		(property "Reference" "#PWR0128"
+		(property "Reference" "#PWR0259"
 			(at 223.52 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -11027,28 +11069,28 @@
 			(uuid "e7fbd9f4-f72f-4db9-9e75-0a7dee7a5d24")
 		)
 		(instances
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "#PWR0178")
+					(reference "#PWR0259")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "#PWR0153")
+					(reference "#PWR0253")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "#PWR0203")
+					(reference "#PWR0265")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "#PWR0128")
+					(reference "#PWR0247")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "PCM_Transistor_MOSFET_AKL:2N6660")
+		(lib_id "lib:2N6660")
 		(at 96.52 146.05 0)
 		(unit 1)
 		(body_style 1)
@@ -11059,7 +11101,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7a614b05-edaf-45dd-b454-62f750565c5a")
-		(property "Reference" "Q3"
+		(property "Reference" "Q21"
 			(at 102.87 144.7799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11081,7 +11123,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SON:Diodes_PowerDI3333-8"
+		(property "Footprint" "lib:DOY180N03T_TDFN3333-8"
 			(at 101.6 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -11103,7 +11145,7 @@
 				)
 			)
 		)
-		(property "Description" "-55℃~+150℃ 1.5V@250uA 1.675nF 2.9mΩ@10V 26nC@20V 31pF 395pF 40V 55W 75A N-Channel PDFN-8L(3x3) MOSFETs ROHS"
+		(property "Description" "N-channel MOSFET 30 V, TDFN3333-8 (DOY180N03T datasheet)"
 			(at 96.52 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -11169,7 +11211,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "DOINGTER"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -11219,21 +11261,21 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "Q15")
+					(reference "Q17")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "Q9")
+					(reference "Q11")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "Q21")
+					(reference "Q23")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "Q3")
+					(reference "Q5")
 					(unit 1)
 				)
 			)
@@ -11251,7 +11293,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7e452976-17c6-4f45-b776-8046af86c07d")
-		(property "Reference" "C51"
+		(property "Reference" "C97"
 			(at 238.125 38.0999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11262,7 +11304,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "4.7uF 50v"
 			(at 238.125 40.6399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11273,7 +11315,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "lib:C_0805_2012Metric"
 			(at 235.9152 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -11317,6 +11359,42 @@
 				)
 			)
 		)
+		(property "LCSC" "C98192"
+			(at 238.125 40.6399 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "MPN" "CL21A475KBQNNNE"
+			(at 238.125 40.6399 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 238.125 40.6399 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(pin "2"
 			(uuid "be1991df-2a07-4ad4-9974-138967250b0b")
 		)
@@ -11324,28 +11402,28 @@
 			(uuid "f89f3e73-5f5a-4bf2-8c64-6fa5cec0c312")
 		)
 		(instances
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "C71")
+					(reference "C97")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "C61")
+					(reference "C94")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "C81")
+					(reference "C100")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "C51")
+					(reference "C91")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "PCM_Resistor_AKL:R_0402")
+		(lib_id "lib:R_0402")
 		(at 149.86 146.05 90)
 		(unit 1)
 		(body_style 1)
@@ -11355,7 +11433,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8bc6297c-b0cc-476c-b5e4-3b63308d9121")
-		(property "Reference" "R25"
+		(property "Reference" "R62"
 			(at 149.86 141.224 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11375,7 +11453,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "lib:R_0201_0603Metric"
 			(at 161.29 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -11463,7 +11541,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -11521,28 +11599,28 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "R63")
+					(reference "R81")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "R44")
+					(reference "R62")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "R82")
+					(reference "R100")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "R25")
+					(reference "R43")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "PCM_Resistor_AKL:R_0402")
+		(lib_id "lib:R_0402")
 		(at 88.9 147.32 90)
 		(unit 1)
 		(body_style 1)
@@ -11552,7 +11630,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8e4076ab-c104-40fd-aae4-f8fb13c1588f")
-		(property "Reference" "R23"
+		(property "Reference" "R60"
 			(at 88.9 142.494 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11572,7 +11650,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "lib:R_0201_0603Metric"
 			(at 100.33 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -11660,7 +11738,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -11718,21 +11796,21 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "R61")
+					(reference "R79")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "R42")
+					(reference "R60")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "R80")
+					(reference "R98")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "R23")
+					(reference "R41")
 					(unit 1)
 				)
 			)
@@ -11750,7 +11828,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "91b34538-5e75-41b4-af67-1cffacb8e83b")
-		(property "Reference" "#PWR0124"
+		(property "Reference" "#PWR059"
 			(at 187.96 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -11826,28 +11904,28 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "#PWR0174")
+					(reference "#PWR0185")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "#PWR0149")
+					(reference "#PWR0166")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "#PWR0199")
+					(reference "#PWR0204")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "#PWR0124")
+					(reference "#PWR0147")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "PCM_Transistor_MOSFET_AKL:2N6660")
+		(lib_id "lib:2N6660")
 		(at 36.83 161.29 0)
 		(unit 1)
 		(body_style 1)
@@ -11858,7 +11936,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b65e2be7-47e1-4bb9-82c6-27d434f8d677")
-		(property "Reference" "Q2"
+		(property "Reference" "Q20"
 			(at 43.18 160.0199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11880,7 +11958,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SON:Diodes_PowerDI3333-8"
+		(property "Footprint" "lib:DOY180N03T_TDFN3333-8"
 			(at 41.91 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -11902,7 +11980,7 @@
 				)
 			)
 		)
-		(property "Description" "-55℃~+150℃ 1.5V@250uA 1.675nF 2.9mΩ@10V 26nC@20V 31pF 395pF 40V 55W 75A N-Channel PDFN-8L(3x3) MOSFETs ROHS"
+		(property "Description" "N-channel MOSFET 30 V, TDFN3333-8 (DOY180N03T datasheet)"
 			(at 36.83 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -11968,7 +12046,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "DOINGTER"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -12018,28 +12096,28 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "Q14")
+					(reference "Q16")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "Q8")
+					(reference "Q10")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "Q20")
+					(reference "Q22")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "Q2")
+					(reference "Q4")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "ESCLibrary:0201_1kR")
+		(lib_id "lib:0201_1kR")
 		(at 254 111.76 90)
 		(unit 1)
 		(body_style 1)
@@ -12050,7 +12128,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b7f2632a-37c3-45ff-83c3-f9088547e792")
-		(property "Reference" "R34"
+		(property "Reference" "R71"
 			(at 259.08 111.7599 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12072,7 +12150,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "lib:R_0201_0603Metric"
 			(at 264.16 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -12162,7 +12240,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -12220,28 +12298,28 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "R72")
+					(reference "R90")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "R53")
+					(reference "R71")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "R91")
+					(reference "R109")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "R34")
+					(reference "R52")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "PCM_Transistor_MOSFET_AKL:2N6660")
+		(lib_id "lib:2N6660")
 		(at 157.48 144.78 0)
 		(unit 1)
 		(body_style 1)
@@ -12252,7 +12330,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b81d2055-72dd-4f80-8595-bad8791ff875")
-		(property "Reference" "Q5"
+		(property "Reference" "Q23"
 			(at 163.83 143.5099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12274,7 +12352,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SON:Diodes_PowerDI3333-8"
+		(property "Footprint" "lib:DOY180N03T_TDFN3333-8"
 			(at 162.56 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -12296,7 +12374,7 @@
 				)
 			)
 		)
-		(property "Description" "-55℃~+150℃ 1.5V@250uA 1.675nF 2.9mΩ@10V 26nC@20V 31pF 395pF 40V 55W 75A N-Channel PDFN-8L(3x3) MOSFETs ROHS"
+		(property "Description" "N-channel MOSFET 30 V, TDFN3333-8 (DOY180N03T datasheet)"
 			(at 157.48 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -12362,7 +12440,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "DOINGTER"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -12412,21 +12490,21 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "Q17")
+					(reference "Q19")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "Q11")
+					(reference "Q13")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "Q23")
+					(reference "Q25")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "Q5")
+					(reference "Q7")
 					(unit 1)
 				)
 			)
@@ -12444,7 +12522,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bced1852-aff7-4a36-8611-bd5bceac7e1d")
-		(property "Reference" "#PWR0129"
+		(property "Reference" "#PWR0104"
 			(at 229.87 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -12520,21 +12598,21 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "#PWR0179")
+					(reference "#PWR0188")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "#PWR0154")
+					(reference "#PWR0169")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "#PWR0204")
+					(reference "#PWR0207")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "#PWR0129")
+					(reference "#PWR0150")
 					(unit 1)
 				)
 			)
@@ -12552,7 +12630,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c3dc90c7-0c37-4caf-be43-01773e5eda25")
-		(property "Reference" "#PWR0132"
+		(property "Reference" "#PWR0262"
 			(at 245.745 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -12610,28 +12688,28 @@
 			(uuid "b0fad990-7efb-4f77-b76d-3b9e896043ee")
 		)
 		(instances
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "#PWR0182")
+					(reference "#PWR0262")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "#PWR0157")
+					(reference "#PWR0256")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "#PWR0207")
+					(reference "#PWR0268")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "#PWR0132")
+					(reference "#PWR0250")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "PCM_Resistor_AKL:R_0402")
+		(lib_id "lib:R_0402")
 		(at 29.21 162.56 90)
 		(unit 1)
 		(body_style 1)
@@ -12641,7 +12719,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ce2b3565-8c3a-47a6-a3df-025cfef0ee9f")
-		(property "Reference" "R18"
+		(property "Reference" "R56"
 			(at 29.21 157.734 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12661,7 +12739,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "lib:R_0201_0603Metric"
 			(at 40.64 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -12749,7 +12827,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -12807,21 +12885,21 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "R56")
+					(reference "R74")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "R37")
+					(reference "R55")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "R75")
+					(reference "R93")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "R18")
+					(reference "R36")
 					(unit 1)
 				)
 			)
@@ -12839,7 +12917,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ced00908-aa48-4a1c-9c42-f75eea75c367")
-		(property "Reference" "#PWR0117"
+		(property "Reference" "#PWR0114"
 			(at 92.71 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -12850,7 +12928,7 @@
 				)
 			)
 		)
-		(property "Value" "+3V3"
+		(property "Value" "+3V3_ESC"
 			(at 92.71 27.94 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12915,21 +12993,21 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "#PWR0167")
+					(reference "#PWR0178")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "#PWR0142")
+					(reference "#PWR0159")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "#PWR0192")
+					(reference "#PWR0197")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "#PWR0117")
+					(reference "#PWR0140")
 					(unit 1)
 				)
 			)
@@ -12946,7 +13024,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cf1a5f0c-b6cb-4e5e-b1be-36fb15edf64d")
-		(property "Reference" "#PWR0125"
+		(property "Reference" "#PWR0102"
 			(at 187.96 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -13022,21 +13100,21 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "#PWR0175")
+					(reference "#PWR0186")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "#PWR0150")
+					(reference "#PWR0167")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "#PWR0200")
+					(reference "#PWR0205")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "#PWR0125")
+					(reference "#PWR0148")
 					(unit 1)
 				)
 			)
@@ -13054,7 +13132,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d09ea843-e489-4c7a-b5ef-1840fa329d59")
-		(property "Reference" "#PWR0122"
+		(property "Reference" "#PWR0101"
 			(at 143.51 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -13130,28 +13208,28 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "#PWR0172")
+					(reference "#PWR0183")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "#PWR0147")
+					(reference "#PWR0164")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "#PWR0197")
+					(reference "#PWR0202")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "#PWR0122")
+					(reference "#PWR0145")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "ESCLibrary:GRM033R61C104KE84D")
+		(lib_id "lib:GRM033R61C104KE84D")
 		(at 171.45 68.58 180)
 		(unit 1)
 		(body_style 1)
@@ -13161,7 +13239,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d6c613f0-b29a-453b-88ee-8c6b8443abd9")
-		(property "Reference" "C48"
+		(property "Reference" "C39"
 			(at 169.164 64.516 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13183,7 +13261,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_WIDE"
+		(property "Footprint" "lib:C_0402_WIDE"
 			(at 171.45 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -13273,7 +13351,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -13331,21 +13409,21 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "C68")
+					(reference "C56")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "C58")
+					(reference "C49")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "C78")
+					(reference "C63")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "C48")
+					(reference "C42")
 					(unit 1)
 				)
 			)
@@ -13363,7 +13441,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d765bdf0-71c7-42f4-a633-7eb74ba7ddd2")
-		(property "Reference" "R22"
+		(property "Reference" "R77"
 			(at 71.12 26.67 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13383,7 +13461,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "lib:R_0201_0603Metric"
 			(at 71.12 34.798 90)
 			(hide yes)
 			(show_name no)
@@ -13471,7 +13549,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "YAGEO"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -13529,28 +13607,28 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "R60")
+					(reference "R78")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "R41")
+					(reference "R59")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "R79")
+					(reference "R97")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "R22")
+					(reference "R40")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "PCM_Transistor_MOSFET_AKL:2N6660")
+		(lib_id "lib:2N6660")
 		(at 36.83 146.05 0)
 		(unit 1)
 		(body_style 1)
@@ -13561,7 +13639,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e1c307e0-da1e-4199-993c-565dacc1988b")
-		(property "Reference" "Q1"
+		(property "Reference" "Q19"
 			(at 43.18 144.7799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13583,7 +13661,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SON:Diodes_PowerDI3333-8"
+		(property "Footprint" "lib:DOY180N03T_TDFN3333-8"
 			(at 41.91 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -13605,7 +13683,7 @@
 				)
 			)
 		)
-		(property "Description" "-55℃~+150℃ 1.5V@250uA 1.675nF 2.9mΩ@10V 26nC@20V 31pF 395pF 40V 55W 75A N-Channel PDFN-8L(3x3) MOSFETs ROHS"
+		(property "Description" "N-channel MOSFET 30 V, TDFN3333-8 (DOY180N03T datasheet)"
 			(at 36.83 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -13671,7 +13749,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "DOINGTER"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -13721,21 +13799,21 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "Q13")
+					(reference "Q15")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "Q7")
+					(reference "Q9")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "Q19")
+					(reference "Q21")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "Q1")
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -13753,7 +13831,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e25955d6-cedd-4b4a-857c-685f9946d3b1")
-		(property "Reference" "C50"
+		(property "Reference" "C96"
 			(at 226.695 38.0999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13764,7 +13842,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "4.7uF 50v"
 			(at 226.695 40.6399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13775,7 +13853,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "lib:C_0805_2012Metric"
 			(at 224.4852 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -13819,6 +13897,42 @@
 				)
 			)
 		)
+		(property "LCSC" "C98192"
+			(at 226.695 40.6399 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "MPN" "CL21A475KBQNNNE"
+			(at 226.695 40.6399 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 226.695 40.6399 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(pin "2"
 			(uuid "73703ad4-b759-4e3f-bb7b-455fde8c5457")
 		)
@@ -13826,28 +13940,28 @@
 			(uuid "1e8e2874-c40a-4d89-8d6a-d60e49521fe0")
 		)
 		(instances
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "C70")
+					(reference "C96")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "C60")
+					(reference "C93")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "C80")
+					(reference "C99")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "C50")
+					(reference "C90")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "ESCLibrary:0201_220R")
+		(lib_id "lib:0201_220R")
 		(at 49.53 80.01 0)
 		(unit 1)
 		(body_style 1)
@@ -13858,7 +13972,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec7f2106-44a9-41c0-9d71-940acdd19990")
-		(property "Reference" "R21"
+		(property "Reference" "R59"
 			(at 49.7944 85.09 90)
 			(hide yes)
 			(show_name no)
@@ -13881,7 +13995,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "lib:R_0201_0603Metric"
 			(at 49.53 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -13971,7 +14085,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "YAGEO"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -14029,21 +14143,21 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "R59")
+					(reference "R77")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "R40")
+					(reference "R58")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "R78")
+					(reference "R96")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "R21")
+					(reference "R39")
 					(unit 1)
 				)
 			)
@@ -14060,7 +14174,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "efc6443a-6623-4556-a8ae-15d833f084fe")
-		(property "Reference" "#PWR0121"
+		(property "Reference" "#PWR098"
 			(at 116.84 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -14136,21 +14250,21 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "#PWR0171")
+					(reference "#PWR0182")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "#PWR0146")
+					(reference "#PWR0163")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "#PWR0196")
+					(reference "#PWR0201")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "#PWR0121")
+					(reference "#PWR0144")
 					(unit 1)
 				)
 			)
@@ -14167,7 +14281,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f00611af-956f-4432-8234-bac8d0476ced")
-		(property "Reference" "TP4"
+		(property "Reference" "TP8"
 			(at 25.146 76.708 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14179,6 +14293,7 @@
 		)
 		(property "Value" "TestPoint"
 			(at 30.988 72.898 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14187,7 +14302,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+		(property "Footprint" "lib:TestPoint_Pad_D1.0mm"
 			(at 34.29 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -14242,21 +14357,21 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "TP8")
-					(unit 1)
-				)
-				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
 					(reference "TP6")
 					(unit 1)
 				)
+				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
+					(reference "TP4")
+					(unit 1)
+				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "TP10")
+					(reference "TP8")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "TP4")
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -14274,7 +14389,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f3d0f2cb-b08e-4f62-8fe2-1bea57687fc8")
-		(property "Reference" "#PWR0123"
+		(property "Reference" "#PWR0100"
 			(at 160.02 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -14350,28 +14465,28 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "#PWR0173")
+					(reference "#PWR0184")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "#PWR0148")
+					(reference "#PWR0165")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "#PWR0198")
+					(reference "#PWR0203")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "#PWR0123")
+					(reference "#PWR0146")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "ESCLibrary:0201_10kR")
+		(lib_id "lib:0201_10kR")
 		(at 34.29 63.5 180)
 		(unit 1)
 		(body_style 1)
@@ -14382,7 +14497,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f7a7859e-b3c9-4b3f-bed4-9b63cee0a8fc")
-		(property "Reference" "R19"
+		(property "Reference" "R57"
 			(at 34.29 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14403,7 +14518,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "lib:R_0201_0603Metric"
 			(at 34.29 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -14493,7 +14608,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "YAGEO"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -14551,21 +14666,21 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "R57")
+					(reference "R75")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "R38")
+					(reference "R56")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "R76")
+					(reference "R94")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "R19")
+					(reference "R37")
 					(unit 1)
 				)
 			)
@@ -14582,7 +14697,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f82b9073-21b4-45e2-b111-0e79f084e605")
-		(property "Reference" "#PWR0112"
+		(property "Reference" "#PWR091"
 			(at 38.1 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -14658,21 +14773,21 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "#PWR0162")
+					(reference "#PWR0173")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "#PWR0137")
+					(reference "#PWR0154")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "#PWR0187")
+					(reference "#PWR0192")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "#PWR0112")
+					(reference "#PWR0135")
 					(unit 1)
 				)
 			)
@@ -14689,7 +14804,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f9be6bf0-40d7-45eb-9105-a374905585c8")
-		(property "Reference" "#PWR0116"
+		(property "Reference" "#PWR089"
 			(at 83.82 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -14765,21 +14880,21 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "#PWR0166")
+					(reference "#PWR0177")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "#PWR0141")
+					(reference "#PWR0158")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "#PWR0191")
+					(reference "#PWR0196")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "#PWR0116")
+					(reference "#PWR0139")
 					(unit 1)
 				)
 			)
@@ -14796,7 +14911,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fbabe502-72f3-40da-80af-b353f6f1a94a")
-		(property "Reference" "#PWR0113"
+		(property "Reference" "#PWR092"
 			(at 45.72 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -14872,28 +14987,28 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "#PWR0163")
+					(reference "#PWR0174")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "#PWR0138")
+					(reference "#PWR0155")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "#PWR0188")
+					(reference "#PWR0193")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "#PWR0113")
+					(reference "#PWR0136")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "PCM_Transistor_MOSFET_AKL:2N6660")
+		(lib_id "lib:2N6660")
 		(at 96.52 161.29 0)
 		(unit 1)
 		(body_style 1)
@@ -14904,7 +15019,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "feada041-3f26-4ed6-b8f5-d6b054d8a23f")
-		(property "Reference" "Q4"
+		(property "Reference" "Q22"
 			(at 102.87 160.0199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14926,7 +15041,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SON:Diodes_PowerDI3333-8"
+		(property "Footprint" "lib:DOY180N03T_TDFN3333-8"
 			(at 101.6 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -14948,7 +15063,7 @@
 				)
 			)
 		)
-		(property "Description" "-55℃~+150℃ 1.5V@250uA 1.675nF 2.9mΩ@10V 26nC@20V 31pF 395pF 40V 55W 75A N-Channel PDFN-8L(3x3) MOSFETs ROHS"
+		(property "Description" "N-channel MOSFET 30 V, TDFN3333-8 (DOY180N03T datasheet)"
 			(at 96.52 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -15014,7 +15129,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "DOINGTER"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -15064,28 +15179,28 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "Q16")
+					(reference "Q18")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "Q10")
+					(reference "Q12")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "Q22")
+					(reference "Q24")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "Q4")
+					(reference "Q6")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "PCM_Transistor_MOSFET_AKL:2N6660")
+		(lib_id "lib:2N6660")
 		(at 157.48 160.02 0)
 		(unit 1)
 		(body_style 1)
@@ -15096,7 +15211,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fef311bf-17a1-48c9-b5cb-13c108cf7b12")
-		(property "Reference" "Q6"
+		(property "Reference" "Q24"
 			(at 163.83 158.7499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15118,7 +15233,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SON:Diodes_PowerDI3333-8"
+		(property "Footprint" "lib:DOY180N03T_TDFN3333-8"
 			(at 162.56 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -15140,7 +15255,7 @@
 				)
 			)
 		)
-		(property "Description" "-55℃~+150℃ 1.5V@250uA 1.675nF 2.9mΩ@10V 26nC@20V 31pF 395pF 40V 55W 75A N-Channel PDFN-8L(3x3) MOSFETs ROHS"
+		(property "Description" "N-channel MOSFET 30 V, TDFN3333-8 (DOY180N03T datasheet)"
 			(at 157.48 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -15206,7 +15321,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "DOINGTER"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -15256,21 +15371,21 @@
 					(unit 1)
 				)
 			)
-			(project "OpenAIO"
+			(project "OpenAIO-Base"
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6a76a238-9289-499d-aa08-95fd7cfd4af9"
-					(reference "Q18")
+					(reference "Q20")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/6df3c64b-9042-4802-8151-ba4261464fb0"
-					(reference "Q12")
+					(reference "Q14")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/db3cdd4a-035f-42d3-8f2e-6db113113326"
-					(reference "Q24")
+					(reference "Q26")
 					(unit 1)
 				)
 				(path "/fb88b6f9-ee39-4640-a9d4-04a17ceeac64/ed03c608-7402-46a1-8e98-baf93a4f0edb"
-					(reference "Q6")
+					(reference "Q8")
 					(unit 1)
 				)
 			)

@@ -1,24 +1,21 @@
 # OpenAIO
 
-All-in-one board for toothpick-class FPV, 2-6S: 4x AM32 ESC, power, pads and
-ExpressLRS 2.4 GHz receiver on 25.5 x 25.5 mm, with the flight controller
-(MCU, IMU, baro, OSD, blackbox) on the shared OpenFC-Core module, reflowed onto
-this board as a 52 pad LGA (J1). The ESC and RX sheets come from OpenESC-20x20
-and OpenRX-Lite, the pads from OpenFC-Lite-Mini, wired on the root sheet.
+All-in-one board for toothpick-class FPV, 2-6S, on one PCB: RP2354A flight
+controller (BMI270, DPS368 baro, PIO analog OSD, microSD blackbox), 4x AM32 ESC
+(AT32F421 + NSG2065Q + DOY180N03T) and an ExpressLRS 2.4 GHz receiver
+(ESP32-C3 + SX1281). The sub-sheets come from the manufactured
+OpenFC-Lite-Mini, OpenESC-20x20 and OpenRX-Lite designs. The layout is the
+routed Base and Core boards of the earlier two-board revision (8fa8d7b), merged
+into one file on the OpenAIO-Whoop 8-layer HDI stackup.
 
 ## Architecture
 
-One board. The flight controller is not designed here: it is the OpenFC-Core
-module, placed as J1 (`lib:OpenDrone-Core`, footprint
-`OpenDrone-Core_LGA_land`, 52 pads of 1.0 mm on a 2.0 mm grid, 15 x 15 mm)
-and reflowed onto the top side like any other part. Everything the core needs
-from this board crosses that land: `+4v5` and `+BATT` in, `MOTOR1..4` out to
-the four `esc_channel` sheets, `UART0`/`UART1` and `PIOUART0`/`PIOUART1` to
-the RX sheet and the pads, `CURR` from the current sense amplifier,
-`10V_ENABLE` to the power sheet, `BUZZER-`, `LED_STRIP`, `VIDEO_IN`/`OUT`,
-USB `D+`/`D-` to the Type-C. Pad names are the core's net names; the pin map
-and land are defined by the core's vendored symbol and footprint. They are not
-edited in this repo.
+One schematic, one board. The Base and Core boards of the previous revision
+were joined by a 46-pad LGA (J90 on the Base, J91 on the Core) whose pads
+carried identical nets; both footprints and the `core_interface` sheet are
+gone, so every former LGA net is now a plain net between the two layouts and
+shows as a ratsnest line. The Core's escape vias that went down to J91 are
+left as routing anchors (via_dangling until routed).
 
 ## Voltage envelope
 
@@ -28,18 +25,24 @@ SP40N01GHNK that takes OpenESC-30x30 to 8S is PDFN-8L 5x6 and four channels of
 it do not fit on 25.5 mm, so 6S is the ceiling here, not 8S.
 
 At the bottom of the range the +10V gate rail is not regulated: the buck runs
-in pass-through and the drivers see roughly +BATT, which at 2S is about 5.9 V,
-above the NSG2065Q 4.5 V UVLO and inside its 5-20 V supply range. The board
-runs, but gate drive is about half, so the continuous-current rating at 2S is
-lower than at 6S; neither figure is published without a measurement.
+in pass-through and the drivers see roughly +BATT, 5.6-8.2 V over a 2S flight.
+That clears the NSG2065Q UVLO (4.5 V typ, 4.9 V max) but sits below the 8-20 V
+VCC of its recommended operating conditions (datasheet section 8.5; the 5-20 V
+on page 1 is the feature list), see `research/review-2026-10/INPUT_RANGE.md`.
+2S is outside the driver's specified range until a bench run says otherwise;
+no continuous-current figure is published at 2S or 6S without a measurement.
 
 ## Layout rules
 
-- Nothing may stand under J1 on the top side: the core's bottom is flat
-  copper on the land. Bottom side parts under it are fine.
-- J1 keeps every pad, unused ones stay open; delete pads per instance only for
-  routing room. Ground pads tie into the plane.
-- Move the core only by moving J1; never edit the footprint here.
+- Layer use as routed (from the two-board layouts, not yet re-planned): Base
+  In1-In4 carry the phase-node copper of the power stages, In5 `+BATT` and
+  `+10V`, In6 GND, In2 most Base signal routing; the Core used In1/In4 as GND,
+  In2/In3 for signals and `+3.3V`. The OpenAIO-Whoop plan (L2 and L7 solid GND,
+  power planes on L4/L5) is the target when the layers are re-planned.
+- RF: `+BATT` keeps 0.80 mm from the 2.4 GHz chain; no tracks or vias in the
+  `AE2 antenna` area except the antenna feed.
+- DOY180N03T exposed pads: no other-net copper inside `DOY_EP`.
+- Keep the USB1 locating peg check: the board is now 0.997 mm thick.
 
 ## Repo
 
@@ -48,26 +51,32 @@ lower than at 6S; neither figure is published without a measurement.
 | Maintainer | @Just4Stan (Discord: juststan_) |
 | Status | See the `status-*` topic on the repo. Never written here. |
 | Designed in | KiCad 10 |
-| KiCad project | `hardware/OpenAIO.kicad_pro` |
-| Root schematic | `hardware/OpenAIO.kicad_sch`. Sub-sheets: `fc_power`, `fc_pads` (OpenFC-Lite-Mini), `esc_channel` x4 (OpenESC-20x20), `rx_esp32c3_sx1281` (OpenRX-Lite). The core is the symbol `lib:OpenDrone-Core`, J1, on the root |
-| Board | `hardware/OpenAIO.kicad_pcb`, 6 layers, 1.6 mm, 2 oz outer |
-| Core module | OpenFC-Core, one symbol and one footprint (`OpenDrone-Core_LGA_land`) vendored into `lib`; never edit them here |
-| Local library | `hardware/lib.kicad_sym`, `hardware/lib.pretty/`, `hardware/lib.3dshapes/`, nickname `lib`. Seeded with the OpenFC-Lite-Mini local library so the copied sheets resolve; the lib tables also alias `components`, `4in1ESC` and `OpenRX-Shared` onto the catalogue for the same reason |
-| Shared library | `hardware/KiCad-Library/`, pinned submodule of [OpenDrone-hw/KiCad-Library](https://github.com/OpenDrone-hw/KiCad-Library), nickname `OpenDrone`; 3D models and exact component datasheets resolve through `OPENDRONE_LIB` |
-| Design rules | `hardware/OpenAIO.kicad_dru`: canonical block plus 2 oz outer copper (0.16 mm clearance and track) |
+| KiCad project | `hardware/OpenAIO.kicad_pro`, one schematic and one board |
+| Root schematic | `hardware/OpenAIO.kicad_sch`. Sub-sheets: `fc_power`, `fc_rp2350a`, `fc_imu`, `fc_osd`, `fc_blackbox`, `fc_pads` (OpenFC-Lite-Mini, plus the DPS368 baro U28), `esc_channel` x4 (OpenESC-20x20), `rx_esp32c3_sx1281` (OpenRX-Lite) |
+| Board | `hardware/OpenAIO.kicad_pcb`, 35.4 x 35.4 mm. While the merge is open, the Core layout sits right of the Base outline with its own Edge.Cuts; see `research/ROUTING.md` |
+| Library | Project-local only: `hardware/lib.kicad_sym`, `hardware/lib.pretty/`, `hardware/lib.3dshapes/` (nickname `lib`). KiCad 10 stock `Device`, `power`, `Connector`, `Connector_Generic` and `MCU_Espressif` symbols cover the rest. No `OPENDRONE_LIB` paths in the tables |
+| Design rules | `hardware/OpenAIO.kicad_dru`: canonical block, the HDI 1+6+1 via rules from OpenAIO-Whoop, and the Base/Core rules that still apply (RF, CSA, PHASE, USB, DOY180N03T EP, AE2 antenna, edge pads, mask gangs) |
 | Fab config | `hardware/fabrication-toolkit-options.json` |
-| Board setup | 6 layers, 1.6 mm, 2 oz outer, 0.16 mm clearance and track, via 0.35 on 0.20 drill |
+| Stackup | 8-layer HDI 1+6+1, 0.997 mm, 1 oz on all layers, ENIG, copied from OpenAIO-Whoop (`hardware/tools` of that repo, `stackup.json`): 1080 0.077 / 1080 0.077 / core 0.127 / 2116 0.125 / core 0.127 / 1080 0.077 / 1080 0.077 |
+| Vias | Fab form: laser microvia F.Cu-In1.Cu and In6.Cu-B.Cu 0.25/0.10, buried In1.Cu-In6.Cu 0.33/0.15, stacked allowed. Edit form: one through via per stack (0.35/0.15-0.20), a DRC warning, converted by `tools/hdi_via_pass.py` |
+| Shared library | `hardware/KiCad-Library/`, pinned submodule of [OpenDrone-hw/KiCad-Library](https://github.com/OpenDrone-hw/KiCad-Library). Not referenced by the lib tables: every part used is copied into `lib` |
 | License | CERN-OHL-S-2.0 |
 
 ## Environment
 
 ```sh
+KPY=/Applications/KiCad/KiCad.app/Contents/Frameworks/Python.framework/Versions/Current/bin/python3
+CLI=/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli
 # schematic and board checks
-kicad-cli sch erc hardware/OpenAIO.kicad_sch
-kicad-cli pcb drc --schematic-parity --refill-zones hardware/OpenAIO.kicad_pcb
+$CLI sch erc hardware/OpenAIO.kicad_sch
+$CLI pcb drc --schematic-parity --refill-zones hardware/OpenAIO.kicad_pcb
 
 # netlist, for scripted analysis
-kicad-cli sch export netlist --format kicadsexpr -o /tmp/OpenAIO.net hardware/OpenAIO.kicad_sch
+$CLI sch export netlist --format kicadsexpr -o /tmp/OpenAIO.net hardware/OpenAIO.kicad_sch
+
+# Update PCB from Schematic without the GUI (KiCad closed); new parts park right of the board
+$CLI sch export netlist --format kicadsexpr -o /tmp/OpenAIO.net hardware/OpenAIO.kicad_sch
+$KPY hardware/tools/sync_pcb.py hardware/OpenAIO.kicad_pcb --netlist /tmp/OpenAIO.net
 ```
 
 On macOS `kicad-cli` is at
@@ -76,9 +85,21 @@ only under KiCad's bundled Python. Reusable scripts for renders, STEP export,
 and packaging art come from Incutec hardware tooling. The OpenDrone release
 standard is
 [RELEASES.md](https://github.com/OpenDrone-hw/.github/blob/main/RELEASES.md).
-This board has no board-specific scripts; any it gets go in a `tools` folder under `hardware`.
 `KPY` is KiCad's bundled Python, on macOS
 `/Applications/KiCad/KiCad.app/Contents/Frameworks/Python.framework/Versions/Current/bin/python3`.
+
+`sync_pcb.py` needs the `kicad-cli` path or `--netlist`. A pcbnew save rewrites
+`OpenAIO.kicad_pro`; check `git diff` on it after every script and keep only
+deliberate changes.
+
+Board tools in `hardware/tools/`, from OpenAIO-Whoop, each with its usage in
+the docstring: `hdi_via_pass.py` (edit form <-> fab form vias, `--collapse`),
+`sync_pcb.py`, `pad_vias.py`, `gnd_stitch.py`, `track_to_pour.py`,
+`track_widen.py`, `via_declutter.py`, `via_relocate.py`, `inner_router.py`,
+`loop_resistance.py`. They were written for the Whoop's net and class names
+(`Power`, `Gate`, `Phase`); this board's classes are `POWER`, `PHASE`, `CSA`,
+`RF`, `USB`. Read the class and net constants at the top of a tool before
+running it here.
 
 ## Rules
 
@@ -117,3 +138,9 @@ Python named there.
 - Render the board for the README: `$KPY <hardware-tooling>/hardware/kicad/render_board.py hardware/OpenAIO.kicad_pcb --outdir images`, KiCad closed.
 - Analyse the netlist: export it with the netlist command in Environment, then read it with a script; never hand-write a second BOM.
 - Update the shared library: `git submodule update --remote hardware/KiCad-Library`, run DRC, commit as its own reviewed change.
+
+## Revisions
+
+| Rev | Date | Change |
+|---|---|---|
+| r3 | 2026-10-15 | One board: Base and Core merged, OpenAIO-Whoop 8L HDI stackup, DPS368 baro, schematic review fixes. Not routed as one board. |
