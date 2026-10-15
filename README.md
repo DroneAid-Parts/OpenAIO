@@ -1,6 +1,10 @@
-# OpenAIO
+<p align="center">
+  <img src="images/droneaid-logo.svg" width="154" height="30" alt="DroneAid" />
+</p>
 
-An all-in-one for toothpick-class FPV on 2 to 6 cells: flight controller, 4-in-1 ESC and
+# DroneAid OpenAIO
+
+DroneAid OpenAIO is an all-in-one for toothpick-class FPV on 2 to 6 cells: flight controller, 4-in-1 ESC and
 ExpressLRS receiver on 25.5 x 25.5 mm mounting, on one PCB. It merges three
 boards OpenDrone already makes: OpenFC-Lite-Mini (RP2354A flight controller),
 OpenESC-20x20 (AM32 4-in-1) and OpenRX Lite (ELRS receiver). An earlier revision

@@ -1,4 +1,4 @@
-# OpenAIO
+# DroneAid OpenAIO
 
 All-in-one board for toothpick-class FPV, 2-6S, on one PCB: RP2354A flight
 controller (BMI270, DPS368 baro, PIO analog OSD, microSD blackbox), 4x AM32 ESC
